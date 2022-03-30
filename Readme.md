@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Alisa Tetenova](https://up.htmlacademy.ru/adaptive/25/user/144453).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев] (andreysgra@gmail.com).
 
 ---
 
