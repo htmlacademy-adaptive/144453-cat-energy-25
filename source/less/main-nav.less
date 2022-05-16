@@ -1,8 +1,30 @@
 .main-nav {
   .main-font-bold;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 30px;
   text-transform: uppercase;
-  text-align: center;
+  color: #000000;
+
 }
 
+.main-nav__toogle{
+  border: none;
+  background-color: @main-background;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/mobile-menu-toggle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.main-nav__list{
+  list-style-type: none;
+}
+
+.main-nav__item {
+    border-bottom: 1px solid #E6E6E6;
+    &--first {
+      border-top: 1px solid #E6E6E6;
+    }
+}
