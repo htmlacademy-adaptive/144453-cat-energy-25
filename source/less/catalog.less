@@ -1,24 +1,20 @@
-.catalog__list{
+.catalog__list {
   background-color: @secondary-background;
+  list-style-type: none;
 }
 
-.catalog__item-link, .catalog__item-title {
+.catalog__item-link,
+.catalog__item-title {
   .main-font;
   text-transform: uppercase;
 }
 
-.catalog__list {
-  list-style-type: none;
-}
-
 .catalog__item-description {
-  .secondary-font
-
+  .secondary-font;
 }
 
-.catalog__item{
-
-  &::before{
+.catalog__item {
+  &::before {
     content: "";
     background-color: @basik-color;
     width: 50px;
@@ -28,13 +24,14 @@
   }
 
   &--slim::before {
-    background-image: url(../img/slim-cat-mobile.svg);
+    background-image: url("../img/slim-cat-mobile.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
+
   &--pro::before {
-    background-image: url(../img/pro-cat-mobile.svg);
+    background-image: url("../img/pro-cat-mobile.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -42,10 +39,9 @@
 }
 
 .catalog__item-link {
+  border-top: 1px solid #d9d9d9;
 
-  border-top: 1px solid #D9D9D9;;
-
-  &::after{
+  &::after {
     content: "";
     position: absolute;
     width: 30px;
@@ -53,7 +49,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../img/arrow.svg);
+    background-image: url("../img/arrow.svg");
   }
-
 }

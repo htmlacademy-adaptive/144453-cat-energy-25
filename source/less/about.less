@@ -1,30 +1,29 @@
 .about__list {
-  .secondary-font
-
-}
-
-.about__list{
+  .secondary-font;
   list-style-type: none;
 }
 
 .about__item {
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     width: 60px;
     height: 60px;
   }
-  &--1::before{
-    background-image: url(../img/about1.svg);
-  }
-  &--2::before{
-    background-image: url(../img/about2.svg);
-  }
-  &--3::before{
-    background-image: url(../img/about3.svg);
-  }
-  &--4::before{
-    background-image: url(../img/about4.svg);
+
+  &--1::before {
+    background-image: url("../img/about1.svg");
   }
 
+  &--2::before {
+    background-image: url("../img/about2.svg");
+  }
+
+  &--3::before {
+    background-image: url("../img/about3.svg");
+  }
+
+  &--4::before {
+    background-image: url("../img/about4.svg");
+  }
 }
