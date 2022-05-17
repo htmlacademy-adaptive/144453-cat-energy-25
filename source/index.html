@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
@@ -19,7 +20,7 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item main-nav__item--first  main-nav__item--active"><a>Главная</a></li>
             <li class="main-nav__item"><a herf="catalog.html">Каталог продукции</a></li>
             <li class="main-nav__item"><a herf="form.html">Подбор программы</a></li>
           </ul>
@@ -29,16 +30,16 @@
     </header>
     <main class="main-container">
 
-      <section class="main-container__header">
-        <h1>Функциональное питание для котов</h1>
-        <p class="slogan">Занялся собой? Зайимсь котом!</p>
-        <a class="button" herf="form.html">Подобрать программу</a>
-        <img class="header-image" src="img/header.svg" width="280" height="270" alt="Функциональное питание для котов CatEnergy">
+      <section class="promo">
+        <h1 class="promo__title">Функциональное питание для котов</h1>
+        <p class="promo__slogan">Занялся собой? Зайимсь котом!</p>
+        <img class="promo__image" src="img/header.svg" width="280" height="270" alt="Функциональное питание для котов CatEnergy">
+        <a class="button promo__button" herf="form.html">Подобрать программу</a>
       </section>
 
       <section class="catalog">
         <div class="catalog__wrapper">
-          <h2 class="visually-hidden">Каталог продукции</h2>x
+          <h2 class="visually-hidden">Каталог продукции</h2>
           <ul class="catalog__list">
             <li class="catalog__item catalog__item--slim">
               <h3 class="catalog__item-title">Похудение</h3>
@@ -76,26 +77,29 @@
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="example__stats">
             <div class="example__stats-item">
-              <p class="example__stats-title">Снежение веса</p>
+              <p class="example__stats-title">Снижение веса</p>
               <p class="example__stats-param stats-weight"><span class="stats-weight__value">5</span> кг</p>
             </div>
             <div class="example__stats-item">
               <p class="example__stats-title">Затрачено времени</p>
               <p class="example__stats-param stats-duration"><span class="stats-duration__value">60</span> дней</p>
             </div>
-            <div class="example__stats-item">
-              <p class="example__stats-title">Затраты на питание</p>
-              <p class="example__stats-param stats-cost"><span class="stats-cost__value">5</span> руб.</p>
+            <div class="example__price">
+              <p class="example__price-title">Затраты на питание</p>
+              <p class="example__price-value stats-price"><span class="stats-price__value">15000</span> руб.</p>
             </div>
           </div>
           <div class="example__range-container">
             <img class="example__range-image example__range-image--before" src="img/cat-fat-mobile.svg" width="280" height="232" alt="Было">
             <img class="example__range-image example__range-image--after" src="img/cat-skinny-mobile.svg" width="280" height="232" alt="Стало">
           </div>
-          <div class="example__slider">
-            <button class="button example__slider">Было</button>
-            <div class="slider example__slider"></div>
-            <button class="button example__slider">Стало</button>
+          <div class="example__slider slider">
+            <button class="button slider__button">Было</button>
+            <div class="slider__rander">
+              <div class="slider__bar"></div>
+              <div class="slider__toggle"></div>
+            </div>
+            <button class="button slider__button">Стало</button>
           </div>
         </div>
 
@@ -137,12 +141,12 @@
                 <span class="visually-hidden">Мы в ВКонтакте</span>
               </a>
             </li>
-            <li>
+            <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Мы в YouTube</span>
               </a>
             </li>
-            <li>
+            <li class="social__item">
               <a class="social__link social__link--telegramm" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Мы вТелеграмме</span>
               </a>
@@ -153,7 +157,7 @@
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
-            <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+            <img class="copyright__logo" src="img/html-academy-logo.svg" width="27" height="34" alt="HTML Academy">
           </a>
         </div>
 

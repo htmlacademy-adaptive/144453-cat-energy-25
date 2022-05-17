@@ -1,0 +1,38 @@
+.slider__button {
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  border-bottom: #000000 dotted 1px;
+  background-color: @secondary-background;
+}
+
+.slider__toggle {
+  width: 34px;
+  height: 34px;
+  background-color: #ffffff;
+  border: 1px solid @special-color;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: @basik-color;
+    border-radius: 50%;
+    left: 38.24%;
+    right: 38.24%;
+    top: 38.24%;
+    bottom: 38.24%;
+  }
+}
+
+.slider__bar {
+  width: 85.58px;
+  height: 14px;
+  background: #ffffff;
+  border: 1px solid @special-color;
+  border-radius: 6px;
+}

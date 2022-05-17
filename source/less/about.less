@@ -1,0 +1,37 @@
+.about {
+  padding: 10px 20px 49px 20px;
+}
+
+.about__list {
+  .secondary-font;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.about__item {
+  height: 80px;
+  padding: 10px 0 10px 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+  }
+
+  &--1::before {
+    background-image: url("../img/about1.svg");
+  }
+
+  &--2::before {
+    background-image: url("../img/about2.svg");
+  }
+
+  &--3::before {
+    background-image: url("../img/about3.svg");
+  }
+
+  &--4::before {
+    background-image: url("../img/about4.svg");
+  }
+}
