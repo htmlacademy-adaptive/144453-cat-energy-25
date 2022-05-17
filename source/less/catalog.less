@@ -1,6 +1,10 @@
+.catalog {
+  padding: 10px 20px 10px 20px;
+}
+
 .catalog__list {
-  background-color: @secondary-background;
   list-style-type: none;
+  padding-inline-start: 0;
 }
 
 .catalog__item-link,
@@ -14,6 +18,9 @@
 }
 
 .catalog__item {
+    background-color: @secondary-background;
+    margin-bottom: 20px;
+
   &::before {
     content: "";
     background-color: @basik-color;
